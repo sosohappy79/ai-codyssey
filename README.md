@@ -1196,7 +1196,7 @@ Accept-Ranges: bytes
 ## 8. Git 설정 및 GitHub/VSCode 연동 증거
 
 <details>
-<summary><b>🔍Git과 GitHub의 핵심 역할 및 차이점 (클릭하여 펼치기)</b></summary>
+<summary><b>🔍 Git과 GitHub의 핵심 역할 및 차이점 (클릭하여 펼치기)</b></summary>
 
 <br>
 
@@ -1222,6 +1222,32 @@ Accept-Ranges: bytes
    - 내 컴퓨터의 Git 저장소와 인터넷 상의 GitHub 저장소(`https://github.com/...`)를 서로 연결하여, 코드를 업로드(`push`)하거나 다운로드(`pull`)할 수 있도록 만들어주는 고속도로 역할을 합니다.
 
 </details>
+
+   <details>
+   <summary><b>🔍 Git 주요 명령어 모음 (클릭하여 펼치기)</b></summary>
+   
+| 분류 | 명령어 (`Command`) | 설명 및 주요 기능 |
+| :--- | :--- | :--- |
+| **초기 설정 및 시작** | `git config --global user.name "이름"` | 사용자 이름 설정 (최초 1회) |
+| | `git config --global user.email "이메일"` | 사용자 이메일 설정 (최초 1회) |
+| | `git init` | 현재 디렉토리를 Git 저장소로 초기화 |
+| | `git clone <URL>` | 원격 저장소 복제 및 다운로드 |
+| **기본 작업 사이클** | `git status` | 현재 작업 디렉토리의 상태 확인 |
+| | `git add .` | 변경된 모든 파일을 스테이징 영역에 추가 |
+| | `git commit -m "메시지"` | 스테이징된 변경사항을 커밋(기록) |
+| | `git log --oneline` | 커밋 히스토리를 한 줄씩 간단하게 조회 |
+| **브랜치 관리** | `git branch` | 로컬 브랜치 목록 확인 |
+| | `git switch <브랜치명>` | 지정한 브랜치로 이동 |
+| | `git switch -c <브랜치명>` | 브랜치 생성과 동시에 이동 |
+| | `git merge <브랜치명>` | 현재 브랜치로 다른 브랜치 내역 병합 |
+| **원격 저장소 동기화**| `git remote add origin <URL>` | 원격 저장소 주소 연결 |
+| | `git push origin <브랜치명>` | 원격 저장소에 커밋 내용 업로드 |
+| | `git pull origin <브랜치명>` | 원격 저장소의 최신 내용 다운로드 및 병합 |
+| **상태 되돌리기** | `git restore --staged <파일명>` | `git add`한 파일의 상태를 취소 (파일은 유지) |
+| | `git commit --amend -m "수정"` | 가장 최근의 커밋 메시지 수정 |
+| | `git restore <파일명>` | 작업 중이던 파일의 변경 사항 폐기 |
+
+   </details>
 
 <br>
 
